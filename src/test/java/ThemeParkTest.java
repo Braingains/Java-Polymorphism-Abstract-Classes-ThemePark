@@ -17,4 +17,9 @@ public class ThemeParkTest {
         assertEquals("LisneyDand", LisneyDand.getName());
     }
 
+    @Test
+    public void hasReviewedAttractions() {
+        assertEquals(7, this.LisneyDand.getAllReviewed().size());
+    }
+
 }
