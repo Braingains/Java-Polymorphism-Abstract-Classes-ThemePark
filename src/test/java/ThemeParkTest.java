@@ -24,8 +24,9 @@ public class ThemeParkTest {
     }
 
     @Test
-    public void hasReviewedAttractions() {
-        assertEquals(7, this.LisneyDand.getAllReviewed().size());
+    public void canAddToReviewed() {
+        LisneyDand.AddToReviewed(rollerCoaster);
+        assertEquals(1, LisneyDand.getAllReviewed().size());
     }
 
     @Test
