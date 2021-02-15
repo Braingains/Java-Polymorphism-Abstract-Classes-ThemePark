@@ -1,4 +1,5 @@
 import attractions.*;
+import people.Visitor;
 import stalls.*;
 
 import java.util.ArrayList;
@@ -29,6 +30,11 @@ public class ThemePark {
 
     public String getName() {
         return this.name;
+    }
+
+    public void visit (Visitor visitor, Attraction attraction) {
+        attraction.increaseVisitCount();
+        visitor.visitAttraction(attraction);
     }
 
 
